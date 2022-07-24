@@ -1,0 +1,95 @@
+* {
+    box-sizing : border-box
+}
+
+html {
+    background-image: linear-gradient(to right top, rgb(94, 10, 94) , rgb(4, 4, 206), rgb(0, 125, 125), rgb(255, 73, 197) , rgb(255, 255, 144));
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* style title */
+#title {
+    font-size: 100px;
+    font-family: cursive;
+    color : aqua;
+}
+
+/* style form */
+.form{
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    width: 400px;
+    background-color:rgb(15, 174, 150);
+    color:white;
+    border-radius: 10px;
+}
+
+/* style input */
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+/* style placeholder */
+.input::placeholder{
+    color: lightgray;
+}
+
+
+/* style list */
+.list{
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    font-family: cursive;
+    border-top: dotted;
+    border-color: darkmagenta;
+    position: relative;
+}
+
+/* style trash icon */
+.list li .fa-trash{
+    color: rgb(234, 3, 3);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* style check icon */
+.list li .fa-check-square{
+    color: rgb(71, 255, 71);
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* style when it is checked */
+.list li.checked {
+    color: darkmagenta;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square{
+    color: darkmagenta;
+}
